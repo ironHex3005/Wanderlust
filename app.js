@@ -86,7 +86,7 @@ app.use("/listings/:id/reviews", reviewsRouter);
 app.use("/", userRouter);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to WanderLust!");
+  res.render("listings/index.ejs");
 });
 
 app.all("*", (req, res, next) => {
